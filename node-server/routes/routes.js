@@ -1,7 +1,10 @@
-var appRouter = function(app) {
-  app.post("/reading", function(req, res) {
-    return res.send({"status": "ok"});
-  });
-}
+var express = require('express');
+var router = express.Router();
 
-module.exports = appRouter;
+router.post('/reading', function(req, res) {
+  return res.send({
+    "status": "ok"
+  });
+});
+
+module.exports = router;
