@@ -28,7 +28,7 @@ Arduino IDE Setup
   - DallasTemperature
   - Adafruit BMP085 Library by Adafruit
   - DHT sensor library by Adafruit
-5. Open the sensor-device.ino file from the IDE
+5. Open the **monolith-sensor-device.ino** file from the IDE
 
 Arduino Board Setup
 -------------------
