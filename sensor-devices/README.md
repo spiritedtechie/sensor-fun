@@ -1,4 +1,3 @@
-# sensor-fun
 A sensor device is a remote in-field device which is responsible for capture of raw(ish) sensor data from one or more sensors and forwarding the data to the sensor hub via Bluetooth LE.
 
 The sensor device here is implemented using a Genuino 101 board with one or more sensors attached to the IO pins, and an Arduino C++ program to read the IO for publishing data via Bluetooth LE to the sensor hub.
@@ -33,8 +32,9 @@ Arduino IDE Setup
 
 Arduino Board Setup
 -------------------
-1. Connect Arduino to computer via USB
-2. Wire up Analog I2C sensors using the following rules
+1) Connect Arduino to computer via USB
+
+2) Wire up Analog I2C sensors using the following rules
 ```
 I2C LCD1602 -> Genuino 101
 GND -> GND
@@ -49,8 +49,9 @@ VCC -> 5V
 SDA -> A4
 SCL -> A5
 ```
-You can add multiple I2C devices to same I2C bus provided they each use a different address (which they do in this project).
-3. Wire up Digital sensors:
+You can add multiple I2C devices to same I2C bus provided they each use a different address (which they do in this project)
+
+3) Wire up Digital sensors:
 ```
 DHT11 -> Genuino 101
 GND -> GND
