@@ -22,12 +22,12 @@ Arduino IDE Setup
 2. Install 'Intel Curie Boards' via Boards Manager
 3. Ensure 'Arduino 101' board is selected
 4. Install the following libraries (via Manage Libraries):
-- OneWire
-- ArduinoJson by Benoit Blanchon
-- LiquidCrystal_I2C by Marco Schwartz
-- DallasTemperature
-- Adafruit BMP085 Library by Adafruit
-- DHT sensor library by Adafruit
+  - OneWire
+  - ArduinoJson by Benoit Blanchon
+  - LiquidCrystal_I2C by Marco Schwartz
+  - DallasTemperature
+  - Adafruit BMP085 Library by Adafruit
+  - DHT sensor library by Adafruit
 5. Open the sensor-device.ino file from the IDE
 
 Arduino Board Setup
