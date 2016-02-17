@@ -14,7 +14,7 @@ Hardware
 
 I recommend the Sun Founder Sensor Kit V2 as the sensors are pre-manufactured with appropriate resistors etc. so you can just plug and play!
 
-Avoid using the LCD beyond debugging to reduce power usage.
+Exception for debugging, avoid using the LCD to reduce power usage.
 
 Arduino IDE Setup
 -----------------
@@ -34,7 +34,7 @@ Arduino Board Setup
 -------------------
 1) Connect Arduino to computer via USB
 
-2) Wire up Analog I2C sensors using the following rules
+2) Wire up Analog I2C sensors:
 ```
 I2C LCD1602 -> Genuino 101
 GND -> GND
@@ -68,7 +68,7 @@ SIG -> 7
 ###### Monolithic Device
 The following photos show a monolithic device with all sensors attached via a breadboard.
 - The orange wires from/to the Arduino are used for the digital sensors
-- The blue wires from/to the Arduino are used for the analogie I2C bus
+- The blue wires from/to the Arduino are used for the analog I2C bus
 - The brown and white wires are the I2C slaves connected to the I2C bus
 - The yellow wires are the digital sensors attached to the digital IO pins
 
