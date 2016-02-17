@@ -13,7 +13,7 @@ For this project, we are using a single monolithic sensor device with all sensor
 
 - sensor-device
   - Genuino 101 with Bluetooth LE
-  - Sunfounder component:
+  - Sunfounder components:
     - Basic Temperature-humidity Sensor (DHT11)
     - Barometric Pressure/Temperature/Altitude Sensor (BMP180)
     - Digital Temperature Sensor (DS18B20)
