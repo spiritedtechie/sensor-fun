@@ -65,6 +65,17 @@ VCC -> 5V
 SIG -> 7
 ```
 
+###### Monolithic Device
+The following photos show a monolithic device with all sensors attached via a breadboard.
+- The orange wires from/to the Arduino are used for the digital sensors
+- The blue wires from/to the Arduino are used for the analogie I2C bus
+- The brown and white wires are the I2C slaves connected to the I2C bus
+- The yellow wires are the digital sensors attached to the digital IO pins
+
+![Top View](https://raw.githubusercontent.com/spiritedtechie/sensor-fun/master/sensor-devices/images/top-view.jpg)
+![Side View 1](https://raw.githubusercontent.com/spiritedtechie/sensor-fun/master/sensor-devices/images/side-view-1.jpg)
+![Side View 2](https://raw.githubusercontent.com/spiritedtechie/sensor-fun/master/sensor-devices/images/side-view-2.jpg)
+
 Program Upload
 --------------
 Once the IDE and the Arduino board are setup.
