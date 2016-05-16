@@ -3,7 +3,7 @@ sensor devices and processes that data in some way. In this case, it will forwar
 to the backend for storage and analytics.
 
 The sensor hub here is implemented using a Raspberry Pi and Bluetooth LE for communications
-with the sensor device(s).
+with the sensor device(s). It has a wi-fi dongle configured to send data to a remote backend.
 
 Hardware
 --------
@@ -74,7 +74,7 @@ Once the Bluetooth stack is installed, and the Arduino is advertising a BLE serv
 
 Sensor Listener Service
 -----------------------
-TODO
+TODO - This is work in progress. At present the data is received from the sensor device, but not decoded or sent to the remote backend.
 
 Troubleshooting
 ---------------
