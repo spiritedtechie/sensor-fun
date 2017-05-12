@@ -8,7 +8,7 @@ The architecture consists of three key components:
 3. **backend** - Scaled compute, storage and analytics system for the sensor data.
 
 
-######Implementation
+###### Implementation
 For this project, we are using a single monolithic sensor device with all sensors and an LCD attached to a one IO board. The following overviews the key implementation technologies used:
 
 - sensor-device
