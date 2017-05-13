@@ -1,9 +1,10 @@
+## Overview
+
 A sensor device is a remote in-field device which is responsible for capture of raw(ish) sensor data from one or more sensors and forwarding the data to the sensor hub via Bluetooth LE.
 
 The sensor device here is implemented using a Genuino 101 board with one or more sensors attached to the IO pins, and an Arduino C++ program to read the IO for publishing data via Bluetooth LE to the sensor hub.
 
-Hardware
---------
+## Hardware Requirements
   - Arduino / Genuino 101
   - USB cable type A/B
   - Breadboard + wiring
@@ -16,8 +17,7 @@ I recommend the Sun Founder Sensor Kit V2 as the sensors are pre-manufactured wi
 
 Exception for debugging, avoid using the LCD to reduce power usage.
 
-Arduino IDE Setup
------------------
+## Arduino IDE Setup
 1. Install Arduino IDE 1.6.7+
 2. Install 'Intel Curie Boards' via Boards Manager
 3. Ensure 'Arduino 101' board is selected
@@ -30,8 +30,8 @@ Arduino IDE Setup
    - DHT sensor library by Adafruit
 5. Open the **monolith-sensor-device.ino** file from the IDE
 
-Arduino Board Setup
--------------------
+## Arduino Board Setup
+### Instructions
 1) Connect Arduino to computer via USB
 
 2) Wire up Analog I2C sensors:
@@ -65,7 +65,7 @@ VCC -> 5V
 SIG -> 7
 ```
 
-###### Monolithic Device
+### Monolithic Device
 The following photos show a monolithic device with all sensors attached via a breadboard.
   - The orange wires from/to the Arduino are used for the digital sensors
   - The blue wires from/to the Arduino are used for the analog I2C bus
@@ -76,24 +76,22 @@ The following photos show a monolithic device with all sensors attached via a br
 ![Side View 1](https://raw.githubusercontent.com/spiritedtechie/sensor-fun/master/sensor-devices/images/side-view-1.jpg)
 ![Side View 2](https://raw.githubusercontent.com/spiritedtechie/sensor-fun/master/sensor-devices/images/side-view-2.jpg)
 
-Program Upload
---------------
+## Program Upload
 Once the IDE and the Arduino board are setup.
 
 1. Connect Arduino to computer using USB A/B cable
 2. Upload sketch from Arduino IDE
 
-Resources
----------
-###### Bluetooth LE Concepts
+## Resources
+#### Bluetooth LE Concepts
 * https://learn.adafruit.com/downloads/pdf/introduction-to-bluetooth-low-energy.pdf
 
-###### Arduino Bluetooth LE
+#### Arduino Bluetooth LE
 * https://github.com/01org/corelibs-arduino101/tree/master/libraries/CurieBle
 * https://www.arduino.cc/en/Tutorial/Genuino101CurieBLEHeartRateMonitor
 * https://github.com/bneedhamia/DHTBLESensor
 
-###### Arduino Sensors
+#### Arduino Sensors
 * http://www.sunfounder.com/index.php?c=case_incs&a=detail_&id=321&name=Sensor%20Kit%20for%20Arduino%20V2.0
 * http://www.sunfounder.com/index.php?c=case_incs&a=detail_&id=329&name=Sensor%20Kit%20for%20Arduino%20V2.0
 * http://www.sunfounder.com/index.php?c=case_incs&a=detail_&id=333&name=Sensor%20Kit%20for%20Arduino%20V2.0
