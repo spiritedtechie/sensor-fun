@@ -1,3 +1,4 @@
+## Overview
 The sensor hub is a central hardware component which consumes data from one or more
 sensor devices and processes that data in some way. In this case, it will forward that data
 to the backend for storage and analytics.
@@ -5,15 +6,13 @@ to the backend for storage and analytics.
 The sensor hub here is implemented using a Raspberry Pi and Bluetooth LE for communications
 with the sensor device(s). It has a wi-fi dongle configured to send data to a remote backend.
 
-Hardware
---------
+## Hardware Requirements
 - Raspberry Pi + micro USB power adaptor
 - 8GB SD card
 - WiFi USB adaptor (e.g. Edimax EW-7811UN 150Mbps Wireless Nano USB Adapter)
 - Bluetooth LE USB adaptor (e.g. Plugable USB Bluetooth 4.0 LE Micro Adapter)
 
-Raspberry Pi Base Setup
------------------------
+## Raspberry Pi Base Setup
 1. [Install Raspbian Jessie on the SD card](https://www.raspberrypi.org/documentation/installation/installing-images/mac.md)
 2. Plug in the SD card to the Pi
 3. Plug in the WiFi USB dongle
@@ -41,16 +40,14 @@ Raspberry Pi Base Setup
   - This may reboot your Pi, this is OK just SSH back in once booted
 15. (Optional) Configure VNC server
 
-Raspberry Pi Bluetooth Stack
-----------------------------
+## Raspberry Pi Bluetooth Stack
 This script will install bluez and bluepy to enable interactaction between the Bluetooth LE controller and remote peripheral BLE devices.
 
 - Copy the bluetooth-setup.sh to the Pi home (~) directory
 - Run the setup script
   - `sudo sh bluetooth-setup.sh`
 
-Raspberry Pi Bluetooth Verification
------------------------------------
+## Raspberry Pi Bluetooth Verification
 Once the Bluetooth stack is installed, and the Arduino is advertising a BLE service, there are a few checks to ensure all is working OK:
 
 - `lsusb`
@@ -72,27 +69,24 @@ Once the Bluetooth stack is installed, and the Arduino is advertising a BLE serv
   10. You can select and read attributes from here. Type 'help' for details on how to do this.
   11. `disconnect 98:4F:EE:0D:05:6A` (pin 13 led on Arduino should turn off)
 
-Sensor Listener Service
------------------------
+## Sensor Listener Service
 TODO - This is work in progress. At present the data is received from the sensor device, but not decoded or sent to the remote backend.
 
-Troubleshooting
----------------
+## Troubleshooting
 1. Ensure bluetoothd is running
   - `sudo bluetoothd &`
 2. Ensure device is up
   - `hciconfig`
   - `sudo hciconfig hci0 up`
 
-Resources
----------
-######Wi-fi Setup
+## Resources
+#### Wi-fi Setup
 * http://www.savagehomeautomation.com/projects/raspberry-pi-installing-the-edimax-ew-7811un-usb-wifi-adapte.html
 
-######Bluetooth LE Concepts
+#### Bluetooth LE Concepts
 * https://learn.adafruit.com/downloads/pdf/introduction-to-bluetooth-low-energy.pdf
 
-######Raspberry Pi/Linux Bluetooth LE
+#### Raspberry Pi/Linux Bluetooth LE
 * http://www.elinux.org/RPi_Bluetooth_LE
 * http://www.instructables.com/id/Bluetooth-Low-Energy-Read-Write-to-Sensor-Network-/
 * http://stackoverflow.com/questions/24853597/ble-gatttool-cannot-connect-even-though-device-is-discoverable-with-hcitool-lesc
